@@ -1,0 +1,8 @@
+#Absolute difference
+def findcount(arr,length,num,diff):
+  count=0
+  for i in arr:
+    if abs(i-num)<=diff:
+      count+=1
+  return count
+findcount([12,71,34,15,11] ,5 ,13 ,2)  
