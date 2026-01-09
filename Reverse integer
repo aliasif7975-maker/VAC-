@@ -1,0 +1,13 @@
+ def revint(x):
+  sign = -1 if x<0 else 1
+  x = abs(x)
+  res = 0
+  while x!=0:
+    digit = x%10
+    res = res*10 + digit
+    x = x//10
+  res = res * sign
+  if res >= (-2**32) and res <= (2** 32 - 1):
+    return res
+  else:
+    return 0
