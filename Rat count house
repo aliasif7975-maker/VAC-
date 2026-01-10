@@ -1,5 +1,9 @@
- class Solution(object):
-    def isPowerOfTwo(self, n):
-        if n <= 0:
-            return False
-        return(n & (n - 1))==0
+def rat_count(r,u,n,arr):
+  if len(arr)==0:
+    total = r*u
+    bag=0
+  for i in range(len(arr)):
+    bag+=arr[i]
+  if bag>=total:
+    return i+1
+  return 0
