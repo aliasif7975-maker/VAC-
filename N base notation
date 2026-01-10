@@ -1,0 +1,6 @@
+def base(num,n):
+  res =""
+  while(num!=0):
+    rem = num%n
+    if rem>=10
+    num = num//n
